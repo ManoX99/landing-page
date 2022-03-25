@@ -1,0 +1,325 @@
+$color-gold-light: #c69963;
+$color-gold-dark: #B28451;
+$color-pink-light: #FF3366;
+$color-pink-dark: #BA265D;
+$color-green-light: #7ed56f;
+$color-green-dark: #28b485;
+$color-blue-light: #09c6f9;
+$color-blue-dark: #045de9;
+$color-purple-light: #cb218e;
+$color-purple-dark: #6617cb;
+$color-border: #d0d7de;
+$color-light-grey: #f6f8fa;
+
+
+@mixin colorPicker($color) {
+  @if $color == floats {
+    background-image: linear-gradient(to right, $color-green-light, $color-green-dark);
+  }
+  @if $color == grid {
+    background-image: linear-gradient(to right, $color-gold-light, $color-gold-dark);
+  }
+  @if $color == flexbox {
+    background-image: linear-gradient(to right, $color-pink-light, $color-pink-dark);
+  }
+  @if $color == next {
+    background-image: linear-gradient(to right, $color-blue-light, $color-blue-dark);
+  }
+  @if $color == redux {
+    background-image: linear-gradient(to right, $color-purple-light, $color-purple-dark);
+  }
+}
+
+
+
+.next {
+  @include colorPicker(next);
+}
+
+.flexbox {
+  @include colorPicker(flexbox);
+}
+
+.floats {
+  @include colorPicker(floats);
+}
+
+.grid {
+  @include colorPicker(grid);
+}
+
+.redux{
+  @include colorPicker(flexbox);
+}
+
+// fader for changing between projects
+.fade-in {
+  transition: opacity 1.8s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .8s ease;
+}
+
+// typing animation used on spans
+
+.animation {
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+
+    &--grey {
+      background: $color-light-grey;
+    }
+    
+    @keyframes typewriter {
+      to {
+        left: 100%;
+      }
+    }
+}
+
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.header {
+  display: block;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    padding: 2rem;
+    font-size: 3.8rem;
+    color: transparent;
+    background-clip: text;
+    
+  }
+
+  &__paragraph {
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+  }
+}
+
+
+
+.main {
+  margin-top: 5rem;
+
+  &__list {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color: $color-light-grey;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+
+    &-item:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &-item {
+      color: transparent;
+      background-clip: text;
+    }
+  }
+}
+
+
+
+.showcase {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 38% 60%;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+
+  &__information {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    background-color: $color-light-grey;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    // box-shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+
+  &__img-container { 
+    img {
+      display: block;
+      height: 20vw;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      
+    }
+  }
+}
+
+
+.information {
+  text-align: center;
+  &__title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+  }
+
+  &__list {
+    text-align: center;
+    margin-top: 2rem;
+    list-style: none;
+    margin-left: 4rem;
+    
+    &-item {
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    width: max-content;
+    
+    }
+
+    &-item:not(:last-child) {  
+      margin-bottom: .5rem;
+    }
+
+  }
+}
+
+.about {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: $color-light-grey;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+
+  &__title {
+    padding: 1rem;
+    font-size: 2.2rem;
+    color: transparent;
+    background-clip: text;
+  } 
+}
+
+.link {
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  padding: 2rem;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 10rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: color .5s ease-in-out, transform .1s ease, box-shadow .1s ease;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 10px;
+  
+  &:visited {
+    color: inherit;
+  }
+
+  &:active {
+    transform: translateY(5px);
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+  } 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #f6f8fa;
+    transform: scale(1.5);
+    transition: transform .5s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scale(0);
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #111;
+  
+}

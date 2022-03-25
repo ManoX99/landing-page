@@ -1,0 +1,12 @@
+{
+  "paragraph": {
+    "next": "Renderinggggggggggg",
+    "flexbox": "I like pizza.",
+    "floats" : "Started coding for almost one year.",
+    "grid": "Hot Peppers are niceeeee"
+  },
+  "information": {
+    "floats": ["responsive", "perfect", "adjacent behaviour", "corrupted by design"],
+    "flexbox": ["flexbox", "dynamic", "static site generation"]
+  }
+}
