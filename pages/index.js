@@ -62,7 +62,7 @@ export default function Home({info}) {
               <li className='main__list-item redux'><button type='button' onClick={()=>setColorId('redux')}>Redux</button></li>
             </ul>
           </nav>
-          <Showcase color={delayColorId} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
+          <Showcase color={delayColorId} imgId={colorId} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
           <a className={`link ${colorId}`} rel="noreferrer" target="_blank" href={`${info.link[colorId]}`}>Visit the project</a>        
         </main>
         <footer className='footer'>
