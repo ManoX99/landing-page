@@ -63,7 +63,7 @@ export default function Home({info}) {
             </ul>
           </nav>
           <Showcase color={delayColorId} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
-          <a className={`link ${colorId}`} target="_blank" href={`${info.link[colorId]}`}>Visit the project</a>        
+          <a className={`link ${colorId}`} rel="noreferrer" target="_blank" href={`${info.link[colorId]}`}>Visit the project</a>        
         </main>
         <footer className='footer'>
           <div className='footer__copyright'>Copyright &copy; {(new Date().getFullYear())} Christos Manoloulis. All rights reservered</div>

@@ -24,7 +24,7 @@ const Showcase = ({ color, fader, info, animate, calculateSteps }) => {
         <Information color={color} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
       </div>
       <div className='showcase__img-container'>
-        <img src={`${imagePicker(color)}`} className={`showcase__img ${fader}`} />
+        <img src={`${imagePicker(color)}`} alt="image of a webpage" className={`showcase__img ${fader}`} />
       </div>
     </div>
    );
