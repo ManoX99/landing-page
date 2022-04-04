@@ -7,11 +7,11 @@
     "redux": "React Redux"
   },
   "paragraph": {
-    "next": "Renderinggggggggggg",
-    "flexbox": "I like pizza.",
+    "next": "Team player.",
+    "flexbox": "I am 29 years old.",
     "floats" : "Started coding for almost one year.",
-    "grid": "Hot Peppers are niceeeee",
-    "redux": "adasdsad"
+    "grid": "Fully self taught.",
+    "redux": "Looking for a mentor"
   },
   "information": {
     "next": ["NextJS blogging platform","static site rendering","server side rendering","incrimental static regeneration","firestore realtime data", "firestore rules for security", "not responsive", "log-in works on chrome only"],
@@ -26,5 +26,6 @@
     "floats" : "https://manox99.github.io/Natours-project/",
     "grid": "https://manox99.github.io/Nexter-project/",
     "redux": "https://react-redux-manox.herokuapp.com/"
-  }
+  },
+  "images": ["images/next.webp","images/nexter.webp","images/redux.webp","images/trillo.webp"]
 }
