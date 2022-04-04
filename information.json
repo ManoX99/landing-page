@@ -11,7 +11,7 @@
     "flexbox": "I am 29 years old.",
     "floats" : "Started coding for almost one year.",
     "grid": "Fully self taught.",
-    "redux": "Looking for a mentor"
+    "redux": "Looking for a mentor."
   },
   "information": {
     "next": ["NextJS blogging platform","static site rendering","server side rendering","incrimental static regeneration","firestore realtime data", "firestore rules for security", "not responsive", "log-in works on chrome only"],
