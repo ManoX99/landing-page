@@ -1,12 +1,30 @@
 {
+  "title": {
+    "next": "NextJS Bloging Platform",
+    "flexbox": "Flexbox Layout",
+    "floats" : "Floats Layout",
+    "grid": "Grid Layout",
+    "redux": "React Redux"
+  },
   "paragraph": {
     "next": "Renderinggggggggggg",
     "flexbox": "I like pizza.",
     "floats" : "Started coding for almost one year.",
-    "grid": "Hot Peppers are niceeeee"
+    "grid": "Hot Peppers are niceeeee",
+    "redux": "adasdsad"
   },
   "information": {
-    "floats": ["responsive", "perfect", "adjacent behaviour", "corrupted by design"],
-    "flexbox": ["flexbox", "dynamic", "static site generation"]
+    "next": ["NextJS blogging platform","static site rendering","server side rendering","incrimental static regeneration","firestore realtime data", "firestore rules for security", "not responsive", "log-in works on chrome only"],
+    "flexbox": ["flexbox layout", "everything is positioned with flexbox", "fully responsive", "build with sass"],
+    "floats": ["floats layout", "lots of css techniques", "fully responsive", "built with sass"],
+    "grid": ["grid layout", "everything is positioned with grid", "fully responsive", "build with sass"],
+    "redux": ["redux blog app", "build with redux-toolkit", "using faker for data generation", "react router dom","all taken from redux documentation","not fully responsive"]
+  },
+  "link": {
+    "next": "https://next-fire-app-ashy.vercel.app/",
+    "flexbox": "https://manox99.github.io/Trillo-project/",
+    "floats" : "https://manox99.github.io/Natours-project/",
+    "grid": "https://manox99.github.io/Nexter-project/",
+    "redux": "https://react-redux-manox.herokuapp.com/"
   }
 }

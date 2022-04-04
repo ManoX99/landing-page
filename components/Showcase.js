@@ -4,17 +4,17 @@ const Showcase = ({ color, fader, info, animate, calculateSteps }) => {
   const imagePicker = (color) => {
     switch (color) {
       case 'floats' :
-        return '/images/natours.jpg'
+        return '/images/natours.webp'
       case 'next':
-        return '/images/next.jpg';
+        return '/images/next.webp';
       case 'grid':
-        return '/images/nexter.jpg';
+        return '/images/nexter.webp';
       case 'flexbox':
-        return '/images/trillo.jpg';
+        return '/images/trillo.webp';
       case 'redux':
-        return '/images/redux.jpg';
+        return '/images/redux.webp';
       default:
-        return '/images/natours.jpg';
+        return '/images/natours.webp';
     }
   }
 
