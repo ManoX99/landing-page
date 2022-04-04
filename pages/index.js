@@ -36,10 +36,11 @@ export default function Home({info}) {
       setFirstRender(false);
     }
 
-
+    // smaller delay for image request to be on time
     setTimeout(() => {
       setImageUpdate(colorId);
     }, 700);
+
     // change color and animation with 1s delay
     setTimeout(() => {  
       setFader('fade-in');
@@ -48,6 +49,7 @@ export default function Home({info}) {
     }, 1000);
   }, [colorId]);
 
+  // inline style
   const calculateSteps = (steps) => {
     return {animation: `typewriter 2s steps(${steps}) forwards`}
   }
@@ -57,7 +59,6 @@ export default function Home({info}) {
   return (
     <>
       <Head>
-        
         <title>landing page</title>
       </Head>
       <div className='flex-container'>

@@ -14,11 +14,11 @@
     "redux": "Looking for a mentor."
   },
   "information": {
-    "next": ["NextJS blogging platform","static site rendering","server side rendering","incrimental static regeneration","firestore realtime data", "firestore rules for security", "not responsive", "log-in works on chrome only"],
-    "flexbox": ["flexbox layout", "everything is positioned with flexbox", "fully responsive", "build with sass"],
-    "floats": ["floats layout", "lots of css techniques", "fully responsive", "built with sass"],
-    "grid": ["grid layout", "everything is positioned with grid", "fully responsive", "build with sass"],
-    "redux": ["redux blog app", "build with redux-toolkit", "using faker for data generation", "react router dom","all taken from redux documentation","not fully responsive"]
+    "next": ["NextJS blogging platform","Static site rendering","Server side rendering","Incrimental static regeneration","Firestore realtime data", "Firestore rules for security", "Not responsive", "Log-in works on chrome only"],
+    "flexbox": ["Flexbox layout", "Everything is positioned with flexbox", "Fully responsive", "Build with sass"],
+    "floats": ["Floats layout", "Lots of css techniques", "Fully responsive", "Built with sass"],
+    "grid": ["Grid layout", "Everything is positioned with grid", "Fully responsive", "Build with sass"],
+    "redux": ["Redux blog app", "Build with redux-toolkit", "Using faker for data generation", "React router dom","All taken from redux documentation","Not fully responsive"]
   },
   "link": {
     "next": "https://next-fire-app-ashy.vercel.app/",
