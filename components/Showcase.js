@@ -1,6 +1,6 @@
 import Information from './Information'
 
-const Showcase = ({ color, fader, info, animate, calculateSteps }) => {
+const Showcase = ({ color, fader, info, animate, calculateSteps, imageUpdate }) => {
   const imagePicker = (color) => {
     switch (color) {
       case 'floats' :
@@ -24,7 +24,7 @@ const Showcase = ({ color, fader, info, animate, calculateSteps }) => {
         <Information color={color} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
       </div>
       <div className='showcase__img-container'>
-        <img src={`${imagePicker(color)}`} alt="image of a webpage" className={`showcase__img ${fader}`} />
+        <img src={`${imagePicker(imageUpdate)}`} alt="image of a webpage" className={`showcase__img ${fader}`} />
       </div>
     </div>
    );

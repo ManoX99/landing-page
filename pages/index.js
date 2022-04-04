@@ -18,6 +18,7 @@ export default function Home({info}) {
   const [ fader, setFader ] = useState('fade-in');
   const [ delayColorId, setdelayColorId ] = useState(colorId);
   const [ animate, setAnimate ] = useState(true);
+  const [imageUpdate, setImageUpdate] = useState('floats');
 
   // preload images
   useEffect(() => {
@@ -35,6 +36,10 @@ export default function Home({info}) {
       setFirstRender(false);
     }
 
+
+    setTimeout(() => {
+      setImageUpdate(colorId);
+    }, 700);
     // change color and animation with 1s delay
     setTimeout(() => {  
       setFader('fade-in');
@@ -70,7 +75,7 @@ export default function Home({info}) {
               <li className='main__list-item redux'><button type='button' onClick={()=>setColorId('redux')}>Redux</button></li>
             </ul>
           </nav>
-          <Showcase color={delayColorId} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
+          <Showcase color={delayColorId} imageUpdate={imageUpdate} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
           <a className={`link ${colorId}`} rel="noreferrer" target="_blank" href={`${info.link[colorId]}`}>Visit the project</a>        
         </main>
         <footer className='footer'>
