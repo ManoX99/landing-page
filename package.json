@@ -17,6 +17,5 @@
   "devDependencies": {
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0"
-  },
-  "browserslist": [">0.3%", "not ie 11", "not dead", "not op_mini all"]
+  }  
 }
