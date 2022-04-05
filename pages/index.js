@@ -69,11 +69,11 @@ export default function Home({info}) {
         <main className='main'>
           <nav>
             <ul className='main__list'>
-              <li className='main__list-item next'><button type='button' onClick={()=>setColorId('next')}>Next</button></li>
-              <li className='main__list-item flexbox'><button type='button' onClick={()=>setColorId('flexbox')}>Flexbox</button></li>
-              <li className='main__list-item floats'><button type='button' onClick={()=>setColorId('floats')}>Floats</button></li>
-              <li className='main__list-item grid'><button type='button' onClick={()=>setColorId('grid')}>Grid</button></li>
-              <li className='main__list-item redux'><button type='button' onClick={()=>setColorId('redux')}>Redux</button></li>
+              <li className='main__list-item'><button className='main__list-button next' type='button' onClick={()=>setColorId('next')}>Next</button></li>
+              <li className='main__list-item'><button className='main__list-button flexbox'  type='button' onClick={()=>setColorId('flexbox')}>Flexbox</button></li>
+              <li className='main__list-item'><button className='main__list-button floats'  type='button' onClick={()=>setColorId('floats')}>Floats</button></li>
+              <li className='main__list-item'><button className='main__list-button grid'  type='button' onClick={()=>setColorId('grid')}>Grid</button></li>
+              <li className='main__list-item'><button className='main__list-button redux'  type='button' onClick={()=>setColorId('redux')}>Redux</button></li>
             </ul>
           </nav>
           <Showcase color={delayColorId} imageUpdate={imageUpdate} fader={fader} info={info} animate={animate} calculateSteps={calculateSteps}/>
