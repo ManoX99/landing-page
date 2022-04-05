@@ -69,7 +69,7 @@ export default function Home({info}) {
         <main className='main'>
           <nav>
             <ul className='main__list'>
-              <li className='main__list-item'><button className='main__list-button next' type='button' onClick={()=>setColorId('next')}><span>Next</span></button></li>
+              <li className='main__list-item'><button  type='button' onClick={()=>setColorId('next')}><span className='main__list-button next'>Next</span></button></li>
               <li className='main__list-item'><button className='main__list-button flexbox'  type='button' onClick={()=>setColorId('flexbox')}>Flexbox</button></li>
               <li className='main__list-item'><button className='main__list-button floats'  type='button' onClick={()=>setColorId('floats')}>Floats</button></li>
               <li className='main__list-item'><button className='main__list-button grid'  type='button' onClick={()=>setColorId('grid')}>Grid</button></li>
