@@ -59,7 +59,7 @@ export default function Home({info}) {
   return (
     <>
       <Head>
-        <title>landing page</title>
+        <title>Landing Page</title>
       </Head>
       <div className='flex-container'>
         <header className={`header ${fader}`}>
@@ -81,7 +81,7 @@ export default function Home({info}) {
         </main>
         <footer className='footer'>
           <div className='footer__copyright'>Copyright &copy; {(new Date().getFullYear())} Christos Manoloulis. All rights reservered</div>
-          <div className='footer__linkedin'><a>linkedIN</a></div>
+          <div className='footer__linkedin'><a rel="noreferrer" target="_blank" href="www.linkedin.com/in/christos-manoloulis-189a7a235">LinkedIN</a></div>
         </footer>
       </div>
     </>
